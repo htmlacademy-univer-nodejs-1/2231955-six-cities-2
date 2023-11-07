@@ -1,0 +1,66 @@
+{
+  "api": {
+    "names": [
+      "Квартира1",
+      "Апартаменты",
+      "Дом",
+      "Комната",
+      "Квартира2"
+    ],
+    "descriptions": [
+      "описание1",
+      "описание2",
+      "описание3",
+      "описание4",
+      "описание5"
+    ],
+    "previewImages": [
+      "preview1.jpg",
+      "preview2.png",
+      "preview3.pdf",
+      "preview4.bmp",
+      "preview5.jpg"
+    ],
+    "images": [
+      "image1.jpg",
+      "image2.png",
+      "image3.pdf",
+      "image4.bmp",
+      "image5.jpg"
+    ],
+    "coordinates": {
+      "latitude": [1.1234, 24.1325, 67.1256, 54.5435, 21.5345],
+      "longitude": [44.3456, 5.6767, 12.345, 1.1233, 4.2323]
+    },
+    "users" : {
+      "usernames": [
+        "username1",
+        "username3",
+        "username4",
+        "username5",
+        "username6"
+      ],
+      "avatars": [
+        "avatar1.jpg",
+        "avatar2.png",
+        "avatar3.pdf",
+        "avatar4.bmp",
+        "avatar5.jpg"
+      ],
+      "emails": [
+        "email1",
+        "email2",
+        "email3",
+        "email4",
+        "email5"
+      ],
+      "passwords": [
+        "password1",
+        "password2",
+        "password3",
+        "password4",
+        "password5"
+      ]
+    }
+  }
+}
