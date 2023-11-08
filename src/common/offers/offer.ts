@@ -1,8 +1,8 @@
-import {Offer} from '../cli/types/offer.type';
-import {City} from '../cli/types/enums/cities.enum';
-import {HousingType} from '../cli/types/enums/housing-type.enum';
-import {Facility} from '../cli/types/enums/facility.enum';
-import {UserType} from '../cli/types/enums/user-type.enum';
+import {Offer} from '../../types/offer.type';
+import {City} from '../../types/enums/cities.enum';
+import {HousingType} from '../../types/enums/housing-type.enum';
+import {Facility} from '../../types/enums/facility.enum';
+import {UserType} from '../../types/enums/user-type.enum';
 
 export function createOffer(rawOffer: string): Offer {
   const offer = rawOffer.replace('\n', '').split('\t');
