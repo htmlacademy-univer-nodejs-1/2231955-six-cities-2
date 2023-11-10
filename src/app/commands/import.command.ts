@@ -1,6 +1,6 @@
 import { Command } from './command.interface.js';
-import {createOffer} from '../../common/offers/offer.js';
-import {TSVFileReader} from '../modules/file-reader/file-reader.js';
+import {createOffer} from "../../modules/offers/offer";
+import {TSVFileReader} from "../../modules/file-reader/file-reader";
 
 export class ImportCommand implements Command {
   public getName(): string {

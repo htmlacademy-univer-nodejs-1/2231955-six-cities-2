@@ -2,7 +2,7 @@ import { Logger, pino, transport } from 'pino';
 import { injectable } from 'inversify';
 import { resolve } from 'node:path';
 import { LoggerInterface } from './logger.interface.js';
-import {getCurrentModuleDirectoryPath} from '../utils/utils.js';
+import {getCurrentModuleDirectoryPath} from '../../common/utils.js';
 
 @injectable()
 export class PinoLogger implements LoggerInterface {
@@ -11,7 +11,7 @@ export class PinoLogger implements LoggerInterface {
   constructor() {
     const modulePath = getCurrentModuleDirectoryPath();
     const logFilePath = 'logs/rest.log';
-    const destination = resolve(modulePath, '../../../', logFilePath);
+    const destination = resolve(modulePath, '../../', logFilePath);
 
     const multiTransport = transport({
       targets: [
