@@ -22,7 +22,6 @@ export default class ConfigService implements ConfigInterface<ConfigSchema> {
     configSchema.validate({ allowed: 'strict', output: this.logger.info });
 
     this.config = configSchema.getProperties();
-    this.logger.info('.env файл успешно найден');
   }
 
   public get<T extends keyof ConfigSchema>(key: T): ConfigSchema[T] {
