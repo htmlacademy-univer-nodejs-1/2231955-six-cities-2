@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import {generateRandomValue, getRandomItem, getRandomItems} from '../../common/utils.js';
 import {MockServerData} from '../../types/mock-server-data.type.js';
 import {OfferGenerator} from './data-generator.interface.js';
 import {City} from '../../types/enums/cities.enum.js';
@@ -11,6 +10,7 @@ import {
   MAX_RATING, MAX_COUNT_ROOM, MIN_COUNT_ROOM,
   MIN_COUNT, MAX_COUNT, MIN_COST, MAX_COST
 } from './const.js';
+import {generateRandomValue, getRandomItem, getRandomItems} from "../utils.js";
 export class TSVOfferGenerator implements OfferGenerator {
   constructor(private readonly mockData: MockServerData) {}
 

@@ -1,8 +1,8 @@
-import {Command} from './command.interface';
-import {MockServerData} from '../../../types/mock-server-data.type';
+import {Command} from './command.interface.js';
+import {MockServerData} from '../../../types/mock-server-data.type.js';
 import got from 'got';
-import {TSVOfferGenerator} from '../../../modules/data-generator/data-generator.js';
-import {TSVFileWriter} from '../../../modules/file-writer/file-writer.js';
+import {TSVOfferGenerator} from '../../../common/data-generator/data-generator.js';
+import {TSVFileWriter} from '../../../common/file-writer/file-writer.js';
 
 export class GenerateCommand implements Command {
   private initialData!: MockServerData;
