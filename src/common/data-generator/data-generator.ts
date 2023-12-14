@@ -1,16 +1,16 @@
 import dayjs from 'dayjs';
-import {generateRandomValue, getRandomItem, getRandomItems} from '../../../common/utils/utils.js';
-import {MockServerData} from '../../../types/mock-server-data.type.js';
+import {MockServerData} from '../../types/mock-server-data.type.js';
 import {OfferGenerator} from './data-generator.interface.js';
-import {City} from '../../../types/enums/cities.enum.js';
-import {HousingType} from '../../../types/enums/housing-type.enum.js';
-import {Facility} from '../../../types/enums/facility.enum.js';
-import {UserType} from '../../../types/enums/user-type.enum.js';
+import {City} from '../../types/enums/cities.enum.js';
+import {HousingType} from '../../types/enums/housing-type.enum.js';
+import {Facility} from '../../types/enums/facility.enum.js';
+import {UserType} from '../../types/enums/user-type.enum.js';
 import {
   FIRST_WEEK_DAY, LAST_WEEK_DAY, MIN_RATING,
   MAX_RATING, MAX_COUNT_ROOM, MIN_COUNT_ROOM,
   MIN_COUNT, MAX_COUNT, MIN_COST, MAX_COST
 } from './const.js';
+import {generateRandomValue, getRandomItem, getRandomItems} from "../utils.js";
 export class TSVOfferGenerator implements OfferGenerator {
   constructor(private readonly mockData: MockServerData) {}
 

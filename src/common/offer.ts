@@ -1,8 +1,8 @@
-import {Offer} from '../../types/offer.type';
-import {City} from '../../types/enums/cities.enum';
-import {HousingType} from '../../types/enums/housing-type.enum';
-import {Facility} from '../../types/enums/facility.enum';
-import {UserType} from '../../types/enums/user-type.enum';
+import {Offer} from '../types/offer.type.js';
+import {City} from '../types/enums/cities.enum.js';
+import {HousingType} from '../types/enums/housing-type.enum.js';
+import {Facility} from '../types/enums/facility.enum.js';
+import {UserType} from '../types/enums/user-type.enum.js';
 
 export function createOffer(rawOffer: string): Offer {
   const offer = rawOffer.replace('\n', '').split('\t');
@@ -24,7 +24,6 @@ export function createOffer(rawOffer: string): Offer {
     offerAuthorAvatar,
     offerAuthorType,
     offerAuthorEmail,
-    offerAuthorPassword,
     commentsCount,
     latitude,
     longitude,] = offer;
@@ -47,8 +46,7 @@ export function createOffer(rawOffer: string): Offer {
       username: offerAuthorName,
       avatar: offerAuthorAvatar,
       type: offerAuthorType as unknown as UserType,
-      email: offerAuthorEmail,
-      password: offerAuthorPassword
+      email: offerAuthorEmail
     },
     commentsCount: parseInt(commentsCount, 10),
     coordinate: {latitude: parseFloat(latitude), longitude: parseFloat(longitude)}
